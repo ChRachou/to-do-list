@@ -1,4 +1,10 @@
-## Travaux
+[WIP]
+
+## Environnement
+
+Vue3 + Pinia + Typescrypt + Vue-test-utils
+
+## Fonctionnalitês
 
 - Dashboard permettant d'ajouter, éditer et supprimer des items à une liste.
 - Les flèches du navigateur permettent d'annuler l'action précédente
