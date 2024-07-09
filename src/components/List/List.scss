@@ -1,0 +1,42 @@
+.list {
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  background-color: v.$bg-list;
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  box-shadow: 0px 1px 8px v.$color-shadow;
+  margin: 0.5rem 1rem;
+  min-width: 300px;
+  transition: all 0.5s;
+  overflow: hidden;
+  max-width: 500px;
+  border: 1px solid v.$color-border;
+
+  h3 {
+    text-transform: capitalize;
+    span {
+      font-weight: 100;
+      font-size: 14px;
+    }
+  }
+
+  .wrapper-item-list {
+    max-height: 260px;
+    overflow-x: hidden;
+    padding: 0rem 0.3rem;
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    // Track
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px v.$color-box-shadow-scrollbar;
+      border-radius: 10px;
+    }
+    // Handle
+    &::-webkit-scrollbar-thumb {
+      background: v.$bg-color-thumb;
+      border-radius: 10px;
+    }
+  }
+}

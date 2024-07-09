@@ -1,0 +1,46 @@
+@use '@assets/base';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+header {
+  line-height: 1.5;
+  max-height: 100vh;
+
+  h1 {
+    text-transform: capitalize;
+    font-size: 45px;
+    font-family: v.$body-font;
+
+    i {
+      margin: 0rem 1rem;
+      font-size: 40px;
+    }
+  }
+}
+
+#home {
+  background-color: v.$bg-home;
+  border: v.$border;
+  border-radius: v.$border-radius;
+  box-shadow: v.$box-shadow;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  min-height: 297px;
+}
+
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    place-items: center;
+    padding-right: calc(var(v.$section-gap) / 2);
+    justify-content: center;
+  }
+}

@@ -1,0 +1,22 @@
+.input-list {
+  line-height: 30px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 0.5rem;
+  input {
+    height: 28px;
+    width: 75%;
+    border-radius: 6px;
+    border: none;
+    margin: 0.1rem 0.3rem;
+    outline: none;
+    border: 2px solid #b5838d;
+    &::-webkit-input-placeholder {
+      text-transform: capitalize;
+      padding-left: 3px;
+      display: block !important;
+      color: black;
+      font-weight: 200;
+    }
+  }
+}
